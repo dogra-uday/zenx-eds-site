@@ -709,3 +709,61 @@ export {
   waitForFirstImage,
   wrapTextNodes,
 };
+//zen
+const ENDPOINT = "https://author-p24056-e1593080.adobeaemcloud.com/content/cq:graphql/zenx-eds-site/endpoint.json";
+
+async function gql(query) {
+  const res = await fetch(ENDPOINT, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ query })
+  });
+  return (await res.json()).data;
+}
+
+export async function getHero() {
+  return (await gql(`
+    query {
+      heromodelList {
+        items {
+          title
+          subtitle
+          ctaText
+          ctaLink
+        }
+      }
+    }
+  `)).heromodelList.items[0];
+}
+
+export async function getAccounts() {
+  return (await gql(`
+    query {
+      accounttypemodelList {
+        items {
+          title
+          description
+          interestRate
+          minBalance
+        }
+      }
+    }
+  `)).accounttypemodelList.items;
+}
+
+export async function getFormFields() {
+  return (await gql(`
+    query {
+      formfieldmodelList {
+        items {
+          label
+          name
+          type
+          required
+          options
+          step
+        }
+      }
+    }
+  `)).formfieldmodelList.items;
+}
