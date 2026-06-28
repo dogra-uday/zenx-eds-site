@@ -9,4 +9,3 @@ export default async function decorate(block) {
     <a href="${hero.ctaLink}">${hero.ctaText}</a>
   `;
 }
-
