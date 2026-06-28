@@ -1,11 +1,12 @@
 import { getHero } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
-  const h = await getHero();
-
-  const image = h.image ? (h.image.path || h.image['@path'] || '') : '';
+  const hero = await getHero();
 
   block.innerHTML = `
-    <img src="${image}" alt="The Indian Bank" style="width:100%; height:auto;" />
+    <h1>${hero.title}</h1>
+    <p>${hero.subtitle}</p>
+    <a href="${hero.ctaLink}">${hero.ctaText}</a>
   `;
 }
+
