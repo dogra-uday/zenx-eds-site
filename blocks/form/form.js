@@ -30,36 +30,33 @@ export default async function decorate(block) {
   const container = document.createElement('div');
   block.append(container);
 
-  const bind = () => {
+  function bindHandlers(next, prev, submit) {
     container.querySelectorAll('[name]').forEach((el) => {
       el.oninput = (e) => {
         data[e.target.name] = e.target.value;
       };
     });
 
-    const next = container.querySelector('#next');
     if (next) {
       next.onclick = () => {
         step += 1;
-        render();
+        update();
       };
     }
 
-    const prev = container.querySelector('#prev');
     if (prev) {
       prev.onclick = () => {
         step -= 1;
-        render();
+        update();
       };
     }
 
-    const submit = container.querySelector('#submit');
     if (submit) {
       submit.onclick = () => {};
     }
-  };
+  }
 
-  const render = () => {
+  function update() {
     const stepFields = fields.filter((f) => Number(f.step) === step);
 
     container.innerHTML = `
@@ -71,8 +68,12 @@ export default async function decorate(block) {
       </div>
     `;
 
-    bind();
-  };
+    const next = container.querySelector('#next');
+    const prev = container.querySelector('#prev');
+    const submit = container.querySelector('#submit');
 
-  render();
+    bindHandlers(next, prev, submit);
+  }
+
+  update();
 }
