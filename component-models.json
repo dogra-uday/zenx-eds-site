@@ -29,17 +29,27 @@
       {
         "component": "reference",
         "name": "image",
-        "label": "Image"
+        "label": "Hero Image"
       },
       {
         "component": "text",
-        "name": "imageAlt",
-        "label": "Alt"
+        "name": "title",
+        "label": "Title"
       },
       {
-        "component": "richtext",
-        "name": "text",
-        "label": "Text"
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "CTA Text"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link"
       }
     ]
   },
