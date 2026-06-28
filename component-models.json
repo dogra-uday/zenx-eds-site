@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image"
+      },
+      {
+        "component": "text",
+        "name": "title"
+      }
+    ]
+  }
+]
