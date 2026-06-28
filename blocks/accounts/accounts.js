@@ -4,11 +4,9 @@ export default async function decorate(block) {
   const data = await getAccounts();
 
   block.innerHTML = data.map((a) => `
-    <div class="card">
+    <div class=\"card\">
       <h3>${a.title}</h3>
       <p>${a.description}</p>
-      <div>${a.interestRate}</div>
-      <small>${a.minBalance}</small>
     </div>
   `).join('');
 }

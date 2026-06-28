@@ -1,0 +1,13 @@
+{
+  "groups": [
+    {
+      "title": "Custom",
+      "id": "custom",
+      "components": [
+        { "title": "Hero", "id": "hero" },
+        { "title": "Accounts", "id": "accounts" },
+        { "title": "Form", "id": "form" }
+      ]
+    }
+  ]
+}
