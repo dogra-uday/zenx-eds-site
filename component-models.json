@@ -3,12 +3,50 @@
     "id": "page-metadata",
     "fields": [
       {
+  "models": {
+    "hero": {
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "text",
+          "name": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "component": "text",
+          "name": "ctaText",
+          "label": "CTA Text"
+        }
+      ]
+    },
+
+    "accounts": {
+      "fields": []
+    },
+
+    "form": {
+      "fields": [
+        {
+          "component": "text",
+          "name": "heading",
+          "label": "Form Heading"
+        }
+      ]
+    }
+  }
+}
+,
+      {
         "component": "text",
         "valueType": "string",
         "name": "jcr:title",
         "label": "Title"
       },
-      {
+      { 
         "component": "text",
         "valueType": "string",
         "name": "jcr:description",

@@ -9,6 +9,11 @@
     "id": "section",
     "components": [
       "text",
+      
+"hero",
+    "accounts",
+    "form",
+
       "image",
       "button",
       "title",
