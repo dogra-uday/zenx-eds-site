@@ -710,19 +710,20 @@ export {
   wrapTextNodes,
 };
 //zen
-const ENDPOINT = "https://author-p24056-e1593080.adobeaemcloud.com/content/cq:graphql/zenx-eds-site/endpoint.json";
+const ENDPOINT = 'https://author-p24056-e1593080.adobeaemcloud.com/content/cq:graphql/zenx-eds-site/endpoint.json';
 
 async function gql(query) {
   const res = await fetch(ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query })
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query }),
   });
+
   return (await res.json()).data;
 }
 
 export async function getHero() {
-  return (await gql(`
+  const data = await gql(`
     query {
       heromodelList {
         items {
@@ -733,11 +734,13 @@ export async function getHero() {
         }
       }
     }
-  `)).heromodelList.items[0];
+  `);
+
+  return data.heromodelList.items[0];
 }
 
 export async function getAccounts() {
-  return (await gql(`
+  const data = await gql(`
     query {
       accounttypemodelList {
         items {
@@ -748,11 +751,13 @@ export async function getAccounts() {
         }
       }
     }
-  `)).accounttypemodelList.items;
+  `);
+
+  return data.accounttypemodelList.items;
 }
 
 export async function getFormFields() {
-  return (await gql(`
+  const data = await gql(`
     query {
       formfieldmodelList {
         items {
@@ -765,5 +770,7 @@ export async function getFormFields() {
         }
       }
     }
-  `)).formfieldmodelList.items;
+  `);
+
+  return data.formfieldmodelList.items;
 }
