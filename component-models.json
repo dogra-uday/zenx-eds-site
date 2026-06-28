@@ -1,25 +1,42 @@
 {
-  "id": "hero",
-  "fields": [
-    {
-      "component": "reference",
-      "name": "image",
-      "label": "Hero Image"
+  "models": {
+    "hero": {
+      "fields": [
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Hero Image"
+        },
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "text",
+          "name": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "component": "text",
+          "name": "ctaText",
+          "label": "CTA Text"
+        }
+      ]
     },
-    {
-      "component": "text",
-      "name": "title",
-      "label": "Title"
+    "accounts": {
+      "fields": []
     },
-    {
-      "component": "text",
-      "name": "subtitle",
-      "label": "Subtitle"
+    "form": {
+      "fields": []
     },
-    {
-      "component": "text",
-      "name": "ctaText",
-      "label": "CTA Text"
+    "page-metadata": {
+      "fields": [
+        {
+          "component": "text",
+          "name": "jcr:title"
+        }
+      ]
     }
-  ]
+  }
 }
