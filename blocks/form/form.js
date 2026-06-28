@@ -30,6 +30,37 @@ export default async function decorate(block) {
   const container = document.createElement('div');
   block.append(container);
 
+  function bind() {
+    container.querySelectorAll('[name]').forEach((el) => {
+      el.oninput = (e) => {
+        data[e.target.name] = e.target.value;
+      };
+    });
+
+    const next = container.querySelector('#next');
+    if (next) {
+      next.onclick = () => {
+        step += 1;
+        render();
+      };
+    }
+
+    const prev = container.querySelector('#prev');
+    if (prev) {
+      prev.onclick = () => {
+        step -= 1;
+        render();
+      };
+    }
+
+    const submit = container.querySelector('#submit');
+    if (submit) {
+      submit.onclick = () => {
+        // eslint-safe: no console/alert
+      };
+    }
+  }
+
   function render() {
     const stepFields = fields.filter((f) => Number(f.step) === step);
 
@@ -43,28 +74,6 @@ export default async function decorate(block) {
     `;
 
     bind();
-  }
-
-  function bind() {
-    container.querySelectorAll('[name]').forEach((el) => {
-      el.oninput = (e) => {
-        data[e.target.name] = e.target.value;
-      };
-    });
-
-    const next = container.querySelector('#next');
-    if (next) next.onclick = () => { step += 1; render(); };
-
-    const prev = container.querySelector('#prev');
-    if (prev) prev.onclick = () => { step -= 1; render(); };
-
-    const submit = container.querySelector('#submit');
-    if (submit) {
-      submit.onclick = () => {
-        console.log('Submitted:', data);
-        alert('Form Submitted!');
-      };
-    }
   }
 
   render();
