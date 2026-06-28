@@ -1,70 +1,25 @@
-[
-  {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:description",
-        "label": "Description"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "keywords",
-        "multi": true,
-        "label": "Keywords"
-      }
-    ]
-  },
-  {
-    "id": "hero",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Hero Image"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "name": "subtitle",
-        "label": "Subtitle"
-      },
-      {
-        "component": "text",
-        "name": "ctaText",
-        "label": "CTA Text"
-      },
-      {
-        "component": "aem-content",
-        "name": "ctaLink",
-        "label": "CTA Link"
-      }
-    ]
-  },
-  {
-    "id": "accounts",
-    "fields": []
-  },
-  {
-    "id": "form",
-    "fields": [
-      {
-        "component": "text",
-        "name": "heading",
-        "label": "Form Heading"
-      }
-    ]
-  }
-]
+{
+  "id": "hero",
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "label": "Hero Image"
+    },
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Title"
+    },
+    {
+      "component": "text",
+      "name": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "component": "text",
+      "name": "ctaText",
+      "label": "CTA Text"
+    }
+  ]
+}
