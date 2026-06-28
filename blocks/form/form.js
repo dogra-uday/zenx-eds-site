@@ -30,22 +30,7 @@ export default async function decorate(block) {
   const container = document.createElement('div');
   block.append(container);
 
-  function render() {
-    const stepFields = fields.filter((f) => Number(f.step) === step);
-
-    container.innerHTML = `
-      <h2>Open Account</h2>
-      ${stepFields.map((f) => renderField(f)).join('')}
-      <div>
-        ${step > 1 ? '<button id="prev">Back</button>' : ''}
-        ${step < 3 ? '<button id="next">Next</button>' : '<button id="submit">Submit</button>'}
-      </div>
-    `;
-
-    bind();
-  }
-
-  function bind() {
+  const bind = () => {
     container.querySelectorAll('[name]').forEach((el) => {
       el.oninput = (e) => {
         data[e.target.name] = e.target.value;
@@ -70,11 +55,24 @@ export default async function decorate(block) {
 
     const submit = container.querySelector('#submit');
     if (submit) {
-      submit.onclick = () => {
-        // no console/alert to avoid lint warnings
-      };
+      submit.onclick = () => {};
     }
-  }
+  };
+
+  const render = () => {
+    const stepFields = fields.filter((f) => Number(f.step) === step);
+
+    container.innerHTML = `
+      <h2>Open Account</h2>
+      ${stepFields.map((f) => renderField(f)).join('')}
+      <div>
+        ${step > 1 ? '<button id="prev">Back</button>' : ''}
+        ${step < 3 ? '<button id="next">Next</button>' : '<button id="submit">Submit</button>'}
+      </div>
+    `;
+
+    bind();
+  };
 
   render();
 }
