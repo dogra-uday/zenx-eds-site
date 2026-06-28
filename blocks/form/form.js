@@ -35,9 +35,7 @@ export default async function decorate(block) {
 
     container.innerHTML = `
       <h2>Open Account</h2>
-
       ${stepFields.map((f) => renderField(f)).join('')}
-
       <div>
         ${step > 1 ? '<button id="prev">Back</button>' : ''}
         ${step < 3 ? '<button id="next">Next</button>' : '<button id="submit">Submit</button>'}
@@ -55,20 +53,10 @@ export default async function decorate(block) {
     });
 
     const next = container.querySelector('#next');
-    if (next) {
-      next.onclick = () => {
-        step += 1;
-        render();
-      };
-    }
+    if (next) next.onclick = () => { step += 1; render(); };
 
     const prev = container.querySelector('#prev');
-    if (prev) {
-      prev.onclick = () => {
-        step -= 1;
-        render();
-      };
-    }
+    if (prev) prev.onclick = () => { step -= 1; render(); };
 
     const submit = container.querySelector('#submit');
     if (submit) {
