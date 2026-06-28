@@ -30,33 +30,7 @@ export default async function decorate(block) {
   const container = document.createElement('div');
   block.append(container);
 
-  function bindHandlers(next, prev, submit) {
-    container.querySelectorAll('[name]').forEach((el) => {
-      el.oninput = (e) => {
-        data[e.target.name] = e.target.value;
-      };
-    });
-
-    if (next) {
-      next.onclick = () => {
-        step += 1;
-        update();
-      };
-    }
-
-    if (prev) {
-      prev.onclick = () => {
-        step -= 1;
-        update();
-      };
-    }
-
-    if (submit) {
-      submit.onclick = () => {};
-    }
-  }
-
-  function update() {
+  const render = () => {
     const stepFields = fields.filter((f) => Number(f.step) === step);
 
     container.innerHTML = `
@@ -68,12 +42,35 @@ export default async function decorate(block) {
       </div>
     `;
 
+    // ✅ bind logic INLINE (no separate function → no ordering issue)
+
+    container.querySelectorAll('[name]').forEach((el) => {
+      el.oninput = (e) => {
+        data[e.target.name] = e.target.value;
+      };
+    });
+
     const next = container.querySelector('#next');
+    if (next) {
+      next.onclick = () => {
+        step += 1;
+        render();
+      };
+    }
+
     const prev = container.querySelector('#prev');
+    if (prev) {
+      prev.onclick = () => {
+        step -= 1;
+        render();
+      };
+    }
+
     const submit = container.querySelector('#submit');
+    if (submit) {
+      submit.onclick = () => {};
+    }
+  };
 
-    bindHandlers(next, prev, submit);
-  }
-
-  update();
+  render();
 }
