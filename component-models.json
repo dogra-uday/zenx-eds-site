@@ -4,11 +4,13 @@
     "fields": [
       {
         "component": "reference",
-        "name": "image"
+        "name": "image",
+        "label": "Image"
       },
       {
         "component": "text",
-        "name": "title"
+        "name": "title",
+        "label": "Title"
       }
     ]
   }
