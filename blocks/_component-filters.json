@@ -1,4 +1,10 @@
 [
-  { "id": "main", "components": ["section"] },
-  { "id": "section", "components": ["hero", "accounts", "form"] }
+  {
+    "id": "main",
+    "components": ["section"]
+  },
+  {
+    "id": "section",
+    "components": ["hero", "accounts", "form"]
+  }
 ]

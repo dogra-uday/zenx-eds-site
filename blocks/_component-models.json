@@ -2,13 +2,29 @@
   "models": {
     "hero": {
       "fields": [
-        { "component": "reference", "name": "image" },
-        { "component": "text", "name": "title" },
-        { "component": "text", "name": "subtitle" },
-        { "component": "text", "name": "ctaText" }
+        {
+          "component": "reference",
+          "name": "image"
+        },
+        {
+          "component": "text",
+          "name": "title"
+        },
+        {
+          "component": "text",
+          "name": "subtitle"
+        },
+        {
+          "component": "text",
+          "name": "ctaText"
+        }
       ]
     },
-    "accounts": { "fields": [] },
-    "form": { "fields": [] }
+    "accounts": {
+      "fields": []
+    },
+    "form": {
+      "fields": []
+    }
   }
 }
