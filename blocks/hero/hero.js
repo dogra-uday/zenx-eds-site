@@ -1,16 +1,15 @@
 export default async function decorate(block) {
-  const picture = block.querySelector('picture');
-  const heading = block.querySelector('h1, h2, h3');
+  const img = block.querySelector('img');
 
   block.innerHTML = '';
 
-  if (picture) {
-    picture.style.width = '100%';
-    block.appendChild(picture);
+  if (img) {
+    img.style.width = '100%';
+    block.appendChild(img);
   }
 
-  if (heading) {
-    heading.style.margin = '20px';
-    block.appendChild(heading);
-  }
+  const title = document.createElement('h1');
+  title.textContent = 'The Indian Bank';
+  block.appendChild(title);
 }
+
