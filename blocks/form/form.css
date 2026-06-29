@@ -1,0 +1,19 @@
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  padding: 12px;
+  background: #0047ab;
+  color: white;
+  border: none;
+}

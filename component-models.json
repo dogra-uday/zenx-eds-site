@@ -9,6 +9,12 @@
           "label": "Title",
           "component": "text-field",
           "valueType": "string"
+        },
+        {
+          "name": "subtitle",
+          "label": "Subtitle",
+          "component": "text-field",
+          "valueType": "string"
         }
       ]
     },
