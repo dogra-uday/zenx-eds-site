@@ -2,17 +2,9 @@
   "models": [
     {
       "id": "hero",
-      "name": "Hero Component",
       "fields": [
         {
           "name": "title",
-          "label": "Title",
-          "component": "text-field",
-          "valueType": "string"
-        },
-        {
-          "name": "subtitle",
-          "label": "Subtitle",
           "component": "text-field",
           "valueType": "string"
         }
@@ -20,11 +12,9 @@
     },
     {
       "id": "accounts",
-      "name": "Accounts Component",
       "fields": [
         {
           "name": "heading",
-          "label": "Heading",
           "component": "text-field",
           "valueType": "string"
         }
@@ -32,17 +22,9 @@
     },
     {
       "id": "form",
-      "name": "Form Component",
       "fields": [
         {
-          "name": "formTitle",
-          "label": "Form Title",
-          "component": "text-field",
-          "valueType": "string"
-        },
-        {
-          "name": "buttonText",
-          "label": "Button Text",
+          "name": "title",
           "component": "text-field",
           "valueType": "string"
         }
