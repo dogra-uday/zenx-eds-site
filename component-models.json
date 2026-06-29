@@ -3,14 +3,39 @@
     "id": "hero",
     "fields": [
       {
-        "component": "reference",
-        "name": "image",
-        "label": "Image"
-      },
-      {
         "component": "text",
         "name": "title",
         "label": "Title"
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtitle"
+      }
+    ]
+  },
+  {
+    "id": "accounts",
+    "fields": [
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Section Heading"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Form Title"
+      },
+      {
+        "component": "text",
+        "name": "buttonText",
+        "label": "Button Text"
       }
     ]
   }

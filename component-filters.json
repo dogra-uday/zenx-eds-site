@@ -5,7 +5,7 @@
   },
   {
     "id": "section",
-    "components": ["hero"]
+    "components": ["hero", "accounts", "form"]
   }
 ]
 
