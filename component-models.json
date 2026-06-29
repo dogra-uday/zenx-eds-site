@@ -4,13 +4,11 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Title"
+        "name": "title"
       },
       {
         "component": "text",
-        "name": "subtitle",
-        "label": "Subtitle"
+        "name": "subtitle"
       }
     ]
   },
@@ -19,8 +17,7 @@
     "fields": [
       {
         "component": "text",
-        "name": "heading",
-        "label": "Section Heading"
+        "name": "heading"
       }
     ]
   },
@@ -29,13 +26,11 @@
     "fields": [
       {
         "component": "text",
-        "name": "title",
-        "label": "Form Title"
+        "name": "title"
       },
       {
         "component": "text",
-        "name": "buttonText",
-        "label": "Button Text"
+        "name": "buttonText"
       }
     ]
   }
