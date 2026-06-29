@@ -12,4 +12,3 @@ export default async function decorate(block) {
   title.textContent = 'The Indian Bank';
   block.appendChild(title);
 }
-
