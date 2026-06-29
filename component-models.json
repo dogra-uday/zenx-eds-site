@@ -4,11 +4,13 @@
     "fields": [
       {
         "component": "text",
-        "name": "title"
+        "name": "title",
+        "valueType": "string"
       },
       {
         "component": "text",
-        "name": "subtitle"
+        "name": "subtitle",
+        "valueType": "string"
       }
     ]
   },
@@ -17,7 +19,8 @@
     "fields": [
       {
         "component": "text",
-        "name": "heading"
+        "name": "heading",
+        "valueType": "string"
       }
     ]
   },
@@ -26,11 +29,13 @@
     "fields": [
       {
         "component": "text",
-        "name": "title"
+        "name": "title",
+        "valueType": "string"
       },
       {
         "component": "text",
-        "name": "buttonText"
+        "name": "buttonText",
+        "valueType": "string"
       }
     ]
   }
