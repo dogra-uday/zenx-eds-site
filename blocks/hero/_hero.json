@@ -22,33 +22,33 @@
       "fields": [
         {
           "component": "text",
-          "name": "eyebrow",
+          "name": "content_eyebrow",
           "label": "Eyebrow"
         },
         {
           "component": "text",
-          "name": "title",
+          "name": "content_title",
           "label": "Title"
         },
         {
           "component": "textarea",
-          "name": "subtitle",
+          "name": "content_subtitle",
           "label": "Subtitle"
         },
         {
           "component": "text",
-          "name": "backgroundImage",
+          "name": "media_backgroundImage",
           "label": "Background Image URL"
         },
         {
           "component": "text",
-          "name": "ctaLabel",
-          "label": "CTA Label"
+          "name": "cta_link",
+          "label": "CTA Link"
         },
         {
           "component": "text",
-          "name": "ctaHref",
-          "label": "CTA Link"
+          "name": "cta_linkText",
+          "label": "CTA Label"
         }
       ]
     }

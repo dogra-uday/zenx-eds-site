@@ -22,37 +22,37 @@
       "fields": [
         {
           "component": "text",
-          "name": "title",
+          "name": "header_title",
           "label": "Title"
         },
         {
           "component": "textarea",
-          "name": "subtitle",
+          "name": "header_subtitle",
           "label": "Subtitle"
         },
         {
           "component": "text",
-          "name": "submitLabel",
+          "name": "submit_label",
           "label": "Submit Label"
         },
         {
           "component": "textarea",
-          "name": "consentText",
+          "name": "consent_text",
           "label": "Consent Text"
         },
         {
           "component": "textarea",
-          "name": "note",
+          "name": "consent_note",
           "label": "Note"
         },
         {
           "component": "text",
-          "name": "actionUrl",
+          "name": "submission_action",
           "label": "Form Action URL"
         },
         {
           "component": "textarea",
-          "name": "successMessage",
+          "name": "submission_successMessage",
           "label": "Success Message"
         }
       ]

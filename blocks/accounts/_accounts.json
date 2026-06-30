@@ -22,57 +22,57 @@
       "fields": [
         {
           "component": "text",
-          "name": "heading",
+          "name": "intro_heading",
           "label": "Heading"
         },
         {
           "component": "textarea",
-          "name": "intro",
+          "name": "intro_text",
           "label": "Intro"
         },
         {
           "component": "text",
-          "name": "account1Title",
+          "name": "account1_name",
           "label": "Account 1 Title"
         },
         {
           "component": "textarea",
-          "name": "account1Description",
+          "name": "account1_description",
           "label": "Account 1 Description"
         },
         {
           "component": "text",
-          "name": "account1Features",
+          "name": "account1_features",
           "label": "Account 1 Features (use | separator)"
         },
         {
           "component": "text",
-          "name": "account2Title",
+          "name": "account2_name",
           "label": "Account 2 Title"
         },
         {
           "component": "textarea",
-          "name": "account2Description",
+          "name": "account2_description",
           "label": "Account 2 Description"
         },
         {
           "component": "text",
-          "name": "account2Features",
+          "name": "account2_features",
           "label": "Account 2 Features (use | separator)"
         },
         {
           "component": "text",
-          "name": "account3Title",
+          "name": "account3_name",
           "label": "Account 3 Title"
         },
         {
           "component": "textarea",
-          "name": "account3Description",
+          "name": "account3_description",
           "label": "Account 3 Description"
         },
         {
           "component": "text",
-          "name": "account3Features",
+          "name": "account3_features",
           "label": "Account 3 Features (use | separator)"
         }
       ]
