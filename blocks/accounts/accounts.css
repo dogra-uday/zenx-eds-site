@@ -78,7 +78,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   .accounts .accounts-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;

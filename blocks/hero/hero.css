@@ -80,7 +80,7 @@
   transform: translateY(-1px);
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   .hero .hero-overlay {
     padding: 46px 46px 40px;
   }
