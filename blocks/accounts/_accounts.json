@@ -1,0 +1,87 @@
+{
+  "definitions": [
+    {
+      "title": "Accounts",
+      "id": "accounts",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Accounts",
+              "model": "accounts"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "accounts",
+      "fields": [
+        {
+          "component": "text",
+          "name": "heading",
+          "label": "Heading"
+        },
+        {
+          "component": "textarea",
+          "name": "intro",
+          "label": "Intro"
+        },
+        {
+          "component": "text",
+          "name": "account1Title",
+          "label": "Account 1 Title"
+        },
+        {
+          "component": "textarea",
+          "name": "account1Description",
+          "label": "Account 1 Description"
+        },
+        {
+          "component": "text",
+          "name": "account1Features",
+          "label": "Account 1 Features (use | separator)"
+        },
+        {
+          "component": "text",
+          "name": "account2Title",
+          "label": "Account 2 Title"
+        },
+        {
+          "component": "textarea",
+          "name": "account2Description",
+          "label": "Account 2 Description"
+        },
+        {
+          "component": "text",
+          "name": "account2Features",
+          "label": "Account 2 Features (use | separator)"
+        },
+        {
+          "component": "text",
+          "name": "account3Title",
+          "label": "Account 3 Title"
+        },
+        {
+          "component": "textarea",
+          "name": "account3Description",
+          "label": "Account 3 Description"
+        },
+        {
+          "component": "text",
+          "name": "account3Features",
+          "label": "Account 3 Features (use | separator)"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "accounts",
+      "components": []
+    }
+  ]
+}

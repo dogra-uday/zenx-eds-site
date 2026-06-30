@@ -1,1 +1,279 @@
-[]
+[
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:description",
+        "label": "Description"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "keywords",
+        "multi": true,
+        "label": "Keywords"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "linkTitle",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "linkType",
+        "label": "Type",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accounts",
+    "fields": [
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Heading"
+      },
+      {
+        "component": "textarea",
+        "name": "intro",
+        "label": "Intro"
+      },
+      {
+        "component": "text",
+        "name": "account1Title",
+        "label": "Account 1 Title"
+      },
+      {
+        "component": "textarea",
+        "name": "account1Description",
+        "label": "Account 1 Description"
+      },
+      {
+        "component": "text",
+        "name": "account1Features",
+        "label": "Account 1 Features (use | separator)"
+      },
+      {
+        "component": "text",
+        "name": "account2Title",
+        "label": "Account 2 Title"
+      },
+      {
+        "component": "textarea",
+        "name": "account2Description",
+        "label": "Account 2 Description"
+      },
+      {
+        "component": "text",
+        "name": "account2Features",
+        "label": "Account 2 Features (use | separator)"
+      },
+      {
+        "component": "text",
+        "name": "account3Title",
+        "label": "Account 3 Title"
+      },
+      {
+        "component": "textarea",
+        "name": "account3Description",
+        "label": "Account 3 Description"
+      },
+      {
+        "component": "text",
+        "name": "account3Features",
+        "label": "Account 3 Features (use | separator)"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "textarea",
+        "name": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "component": "text",
+        "name": "submitLabel",
+        "label": "Submit Label"
+      },
+      {
+        "component": "textarea",
+        "name": "consentText",
+        "label": "Consent Text"
+      },
+      {
+        "component": "textarea",
+        "name": "note",
+        "label": "Note"
+      },
+      {
+        "component": "text",
+        "name": "actionUrl",
+        "label": "Form Action URL"
+      },
+      {
+        "component": "textarea",
+        "name": "successMessage",
+        "label": "Success Message"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "textarea",
+        "name": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "component": "text",
+        "name": "backgroundImage",
+        "label": "Background Image URL"
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label"
+      },
+      {
+        "component": "text",
+        "name": "ctaHref",
+        "label": "CTA Link"
+      }
+    ]
+  }
+]

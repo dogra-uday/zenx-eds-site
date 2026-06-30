@@ -1,11 +1,35 @@
 [
   {
     "id": "main",
-    "components": ["section"]
+    "components": [
+      "section"
+    ]
   },
   {
     "id": "section",
-    "components": ["hero", "accounts", "form"]
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "accounts",
+      "form",
+      "cards",
+      "columns",
+      "fragment"
+    ]
+  },
+  {
+    "id": "accounts",
+    "components": []
+  },
+  {
+    "id": "form",
+    "components": []
+  },
+  {
+    "id": "hero",
+    "components": []
   }
 ]
-
