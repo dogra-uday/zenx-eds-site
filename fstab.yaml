@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/dogra-uday/zenx-eds-site/main"
+    url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/dogra-uday/zenx-eds-site/main/index"
     type: "markup"
     suffix: ".html"
 
